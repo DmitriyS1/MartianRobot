@@ -1,6 +1,14 @@
-﻿namespace MartianRobot.Models
+﻿using MartianRobot.Interfaces;
+using System;
+
+namespace MartianRobot.Models
 {
-    public class Robot 
+    public class Robot : IMessageSender
     {
+
+        public void SendMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
     }
 }
