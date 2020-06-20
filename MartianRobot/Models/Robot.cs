@@ -1,6 +1,6 @@
 ﻿namespace MartianRobot.Models
 {
-    public class Robot
+    public class Robot 
     {
     }
 }

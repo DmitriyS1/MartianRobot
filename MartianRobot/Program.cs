@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MartianRobot.Models;
+using System;
 
 namespace MartianRobot
 {
@@ -6,7 +7,16 @@ namespace MartianRobot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var grid = new Grid(5, 8);
+            var grid2 = new Grid(7, 4);
+
+            grid.PrintGrid();
+
+            Console.WriteLine("______________________________");
+
+            grid2.PrintGrid();
+
+            Console.ReadKey();
         }
     }
 }
