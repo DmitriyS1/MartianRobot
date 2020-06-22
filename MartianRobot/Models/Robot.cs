@@ -3,7 +3,7 @@ using System;
 
 namespace MartianRobot.Models
 {
-    public class Robot : IMessageSender, IMover
+    public class Robot : IMessageSender, IMoveBehavior
     {
         public int CurrentX { get; set; }
 

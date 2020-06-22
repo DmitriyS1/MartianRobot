@@ -7,8 +7,8 @@ namespace MartianRobot
     {
         static void Main(string[] args)
         {
-            var grid = new Grid(5, 8);
-            var grid2 = new Grid(7, 4);
+            var grid = new Grid(5, 6);
+            var grid2 = new Grid(2, 4);
 
             grid.PrintGrid();
 
