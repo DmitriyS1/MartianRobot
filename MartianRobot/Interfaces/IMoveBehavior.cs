@@ -2,6 +2,6 @@
 {
     public interface IMoveBehavior
     {
-        void Move(char instruction);
+        void Move();
     }
 }
