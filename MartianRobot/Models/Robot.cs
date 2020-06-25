@@ -7,14 +7,7 @@ namespace MartianRobot.Models
     {
         public Position Position { get; set; }
 
-        public void Move(char instruction)
-        {
-            switch(instruction)
-            {
-                
-            }
-
-        }
+        public EOrientation Orientation { get; set; }
 
         public void SendMessage(string message)
         {

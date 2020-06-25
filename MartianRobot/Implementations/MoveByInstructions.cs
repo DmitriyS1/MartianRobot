@@ -10,6 +10,8 @@ namespace MartianRobot.Implementations
 
         public Position RobotPosition { get; set; }
 
+        public CycleOrientation RobotOrientation { get; set; }
+
         public void Move()
         {
             var instructionsArray = InstructionsHelper.ParseInstructions(Instructions);
@@ -18,27 +20,29 @@ namespace MartianRobot.Implementations
                 switch (instruction)
                 {
                     case 'F':
-                        if (RobotPosition.CurrentOrientation == 'N')
+                        if (RobotOrientation.CurrentOrientation == EOrientation.North)
                         {
                             RobotPosition.CurrentY++;
                         }
-                        else if (RobotPosition.CurrentOrientation == 'S')
+                        else if (RobotOrientation.CurrentOrientation == EOrientation.South)
                         {
                             RobotPosition.CurrentY--;
                         }
-                        else if (RobotPosition.CurrentOrientation == 'E')
+                        else if (RobotOrientation.CurrentOrientation == EOrientation.East)
                         {
                             RobotPosition.CurrentX--;
                         }
-                        else if (RobotPosition.CurrentOrientation == 'W')
+                        else if (RobotOrientation.CurrentOrientation == EOrientation.West)
                         {
                             RobotPosition.CurrentX++;
                         }
 
                         break;
                     case 'L':
+                        RobotOrientation--;
                         break;
                     case 'R':
+                        RobotOrientation++;
                         break;
                     default:
                         break;
