@@ -16,7 +16,7 @@
         public int Y { get; set; }
 
         /// <summary>
-        /// Shows that some robote get off the grid
+        /// Shows that some robote got off the grid
         /// </summary>
         public bool IsScented { get; set; }
 

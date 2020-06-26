@@ -5,5 +5,7 @@
         public int CurrentX { get; set; }
 
         public int CurrentY { get; set; }
+
+        public bool IsOutOfGrid { get; set; }
     }
 }
