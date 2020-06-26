@@ -4,6 +4,17 @@ namespace MartianRobot
 {
     public class CycleOrientation
     {
+        public CycleOrientation(char orientation)
+        {
+            switch (orientation)
+            {
+                case 'N':
+                    CurrentOrientation = EOrientation.North;
+                    break;
+                case 'E'
+            }
+        }
+
         public EOrientation CurrentOrientation { get; set; }
 
         public static CycleOrientation operator ++(CycleOrientation orientation)
